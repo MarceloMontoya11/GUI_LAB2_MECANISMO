@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{
+background-color: rgb(0, 0, 0);
+}
+#home_widget{
+background-color:rgb(58, 58, 58);
+}
+#msg_label{
+	background-color: rgb(34,34,34);
+	color: qlineargradient(spread:reflect, x1:0.334818, y1:0.278, x2:0.602273, y2:0.574, stop:0 rgba(255, 170, 0, 255), stop:0.994318 rgba(255, 255, 0, 255));
+}
+#grafic1_widget{
+background-color:rgb(58, 58, 58);
+}
+#settings1_widget{
+background-color:rgb(58, 58, 58);
+}
+#grafic2_widget{
+background-color:rgb(58, 58, 58);
+}
+#settings2_widget{
+background-color:rgb(58, 58, 58);
+}
+#home_btn{
+background-color:rgb(0, 0, 0);
+}
+#option_btn{
+background-color:rgb(0, 0, 0);
+}
+#settings_btn1{
+background-color:rgb(0, 0, 0);
+}
+#settings_btn2{
+background-color:rgb(0, 0, 0);
+}
+
+#graf_btn1{
+background-color:rgb(0, 0, 0);
+}
+#graf_btn2{
+background-color:rgb(0, 0, 0);
+}
+#close_btn{
+background-color:rgb(0, 0, 0);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>724</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>ISOCTEUR</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:qlineargradient(spread:reflect, x1:1, y1:0, x2:1, y2:0.506, stop:0.289773 rgba(48, 48, 48, 255), stop:0.75 rgba(59, 59, 59, 255));
+color:qlineargradient(spread:reflect, x1:0.756, y1:0.755727, x2:1, y2:1, stop:0 rgba(0, 95, 143, 255), stop:1 rgba(0, 170, 255, 255))</string>
+    </property>
+    <property name="text">
+     <string>LABORATORIO 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="menu" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>52</width>
+      <height>440</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>52</width>
+      <height>410</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>52</width>
+      <height>440</height>
+     </size>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QPushButton" name="settings_btn1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>            Configuración        </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normalon>../../MEGA-GUI/gui PRUEBA/settings2.png</normalon>
+       <activeon>../../MEGA-GUI/gui PRUEBA/settings.png</activeon>
+      </iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_29">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>190</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0,162,232)</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_30">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>100</y>
+       <width>190</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0,162,232)</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="close_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>380</y>
+       <width>50</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../MEGA-GUI/gui PRUEBA/off.png</normaloff>../../MEGA-GUI/gui PRUEBA/off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="Line" name="line_32">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>190</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0,162,232)</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_33">
+     <property name="geometry">
+      <rect>
+       <x>188</x>
+       <y>0</y>
+       <width>3</width>
+       <height>500</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>3</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0,162,232)</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_34">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>380</y>
+       <width>50</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0,162,232)</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="graf_btn1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>100</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>                   Gráfica              </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normalon>../../MEGA-GUI/gui PRUEBA/Graficos.png</normalon>
+       <activeon>../../MEGA-GUI/gui PRUEBA/Graficos 2.png</activeon>
+      </iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_35">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>150</y>
+       <width>190</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0,162,232)</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="graf_btn2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>150</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>                   Gráfica              </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normalon>../../MEGA-GUI/gui PRUEBA/Graficos.png</normalon>
+       <activeon>../../MEGA-GUI/gui PRUEBA/Graficos 2.png</activeon>
+      </iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_45">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>190</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0,162,232)</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="settings_btn2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>            Configuración        </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normalon>../../MEGA-GUI/gui PRUEBA/settings2.png</normalon>
+       <activeon>../../MEGA-GUI/gui PRUEBA/settings.png</activeon>
+      </iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>graf_btn1</zorder>
+    <zorder>settings_btn1</zorder>
+    <zorder>line_29</zorder>
+    <zorder>line_30</zorder>
+    <zorder>close_btn</zorder>
+    <zorder>line_32</zorder>
+    <zorder>line_33</zorder>
+    <zorder>line_34</zorder>
+    <zorder>line_35</zorder>
+    <zorder>graf_btn2</zorder>
+    <zorder>line_45</zorder>
+    <zorder>settings_btn2</zorder>
+   </widget>
+   <widget class="QPushButton" name="home_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>../../MEGA-GUI/gui PRUEBA/home.png</normalon>
+      <activeon>../../MEGA-GUI/gui PRUEBA/home2.png</activeon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="option_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../MEGA-GUI/gui PRUEBA/3barra.png</normaloff>../../MEGA-GUI/gui PRUEBA/3barra.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line_36">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>2</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>2</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,162,232)</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_37">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>51</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,162,232)</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_38">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,162,232)</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="settings1_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>102</y>
+      <width>721</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_x1_0_A{
+	color: rgb(255, 255, 255);
+}
+#Label_x1_A{
+	color: rgb(255, 255, 255);
+}
+#Label_y1_0_A{
+	color: rgb(255, 255, 255);
+}
+#Label_y1_A{
+	color: rgb(255, 255, 255);
+}
+#Label_x2_0_A{
+	color: rgb(255, 255, 255);
+}
+#Label_x2_A{
+	color: rgb(255, 255, 255);
+}
+#Label_y2_0_A{
+	color: rgb(255, 255, 255);
+}
+#Label_y2_A{
+	color: rgb(255, 255, 255);
+}
+#Label_x3_0_A{
+	color: rgb(255, 255, 255);
+}
+#aplicate1_btn{
+	background-color:qlineargradient(spread:pad, x1:0.5, y1:0.596636, x2:0.5, y2:0.216, stop:0 rgba(0, 111, 111, 255), stop:1 rgba(0, 206, 206, 255));
+	color: rgb(203, 203, 203);
+}</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>116</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="2" column="0">
+       <widget class="QLabel" name="Label_x2_0_A">
+        <property name="text">
+         <string>X2_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="y1_0_A">
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="x2_0_A">
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="x1_0_A">
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="Label_x1_0_A">
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text">
+         <string>X1_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="Label_y1_0_A">
+        <property name="text">
+         <string>Y1_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="y2_0_A">
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="Label_y2_0_A">
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Y2_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="IMG_MEC1">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>50</y>
+       <width>311</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>mecanismo.PNG</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="aplicate1_btn">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>350</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Candara</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>APLICAR</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_8">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>50</y>
+       <width>113</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_9">
+      <item row="2" column="0">
+       <widget class="QLabel" name="Label_x2_A">
+        <property name="text">
+         <string>X2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="y1_A">
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="x2_A">
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="x1_A">
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="Label_x1_A">
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text">
+         <string>X1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="Label_y1_A">
+        <property name="text">
+         <string>Y1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="y2_A">
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="Label_y2_A">
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Y2   </string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <spacer name="horizontalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="grafic1_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>102</y>
+      <width>721</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#update_graf1_btn{
+	background-color:qlineargradient(spread:pad, x1:0.5, y1:0.596636, x2:0.5, y2:0.216, stop:0 rgba(0, 111, 111, 255), stop:1 rgba(0, 206, 206, 255));
+	color: rgb(203, 203, 203);
+}
+#label_cuadro_1{
+	background-color: rgb(255, 255, 255);
+	border:4px outset rgb(102, 102, 102);
+}</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>401</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="grafica_uno"/>
+    </widget>
+    <widget class="QPushButton" name="update_graf1_btn">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>360</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Candara</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>ACTUALIZAR GRÁFICO</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="settings2_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>102</y>
+      <width>721</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_x1_0{
+	color: rgb(255, 255, 255);
+}
+#Label_x1{
+	color: rgb(255, 255, 255);
+}
+#Label_y1_0{
+	color: rgb(255, 255, 255);
+}
+#Label_y1{
+	color: rgb(255, 255, 255);
+}
+#Label_x2_0{
+	color: rgb(255, 255, 255);
+}
+#Label_x2{
+	color: rgb(255, 255, 255);
+}
+#Label_y2_0{
+	color: rgb(255, 255, 255);
+}
+#Label_y2{
+	color: rgb(255, 255, 255);
+}
+#Label_x3_0{
+	color: rgb(255, 255, 255);
+}
+#Label_x3{
+	color: rgb(255, 255, 255);
+}
+#Label_y3_0{
+	color: rgb(255, 255, 255);
+}
+#Label_y3{
+	color: rgb(255, 255, 255);
+}
+#Label_x4_0{
+	color: rgb(255, 255, 255);
+}
+#Label_x4{
+	color: rgb(255, 255, 255);
+}
+#Label_y4_0{
+	color: rgb(255, 255, 255);
+}
+#Label_y4{
+	color: rgb(255, 255, 255);
+}
+#aplicate2_btn{
+	background-color:qlineargradient(spread:pad, x1:0.5, y1:0.596636, x2:0.5, y2:0.216, stop:0 rgba(0, 111, 111, 255), stop:1 rgba(0, 206, 206, 255));
+	color: rgb(203, 203, 203);
+}</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>136</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="Label_x1_0">
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text">
+         <string>X1_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="y1_0"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLineEdit" name="x4_0"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="Label_x4_0">
+        <property name="text">
+         <string>X4_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="Label_x3_0">
+        <property name="text">
+         <string>X3_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="Label_y2_0">
+        <property name="text">
+         <string>Y2_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="x3_0">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="y2_0"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="Label_y1_0">
+        <property name="text">
+         <string>Y1_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="Label_x2_0">
+        <property name="text">
+         <string>X2_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="x2_0"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="x1_0">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="Label_y4_0">
+        <property name="text">
+         <string>Y4_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="y3_0"/>
+      </item>
+      <item row="3" column="1">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="Label_y3_0">
+        <property name="text">
+         <string>Y3_0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLineEdit" name="y4_0"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>50</y>
+       <width>124</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="4" column="0">
+       <widget class="QLabel" name="Label_x3">
+        <property name="text">
+         <string>X3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="Label_y3">
+        <property name="text">
+         <string>Y3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="Label_y4">
+        <property name="text">
+         <string>Y4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="x1">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="x3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLineEdit" name="x4"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="y1"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="y2"/>
+      </item>
+      <item row="4" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLineEdit" name="y4"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="Label_y1">
+        <property name="text">
+         <string>Y1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="Label_y2">
+        <property name="text">
+         <string>Y2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="Label_x2">
+        <property name="text">
+         <string>X2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="y3"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="x2"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="Label_x1">
+        <property name="text">
+         <string>X1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="Label_x4">
+        <property name="text">
+         <string>X4</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="IMG_MEC2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>50</y>
+       <width>311</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>mecanismo_2.PNG</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="aplicate2_btn">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>350</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Candara</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>APLICAR</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="msg_label">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>52</y>
+      <width>721</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka Heading</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Ventana principal.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="home_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>102</y>
+      <width>721</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#logo_mecatronica{
+border-color: rgb(122, 122, 122);
+
+}
+#label_list{
+	
+	
+	background-color: rgb(63, 125, 188);
+}
+
+#label_int{
+	background-color: rgb(63, 125, 188);
+}
+</string>
+    </property>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>701</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>ISOCPEUR</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: qlineargradient(spread:reflect, x1:0.334818, y1:0.278, x2:0.602273, y2:0.574, stop:0 rgba(217, 217, 217, 255), stop:1 rgba(156, 156, 156, 255));
+background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:0.438, y2:0.409, stop:0.0454545 rgba(0, 69, 104, 255), stop:1 rgba(57, 113, 170, 255));
+border: 1px solid rgb(0, 131, 197);
+
+</string>
+     </property>
+     <property name="text">
+      <string>PRESENTACIÓN</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="indent">
+      <number>-1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>53</x>
+       <y>70</y>
+       <width>341</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_int">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>100</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="text">
+      <string>INTEGRANTES:</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="logo_mecatronica">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>301</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>logo_UNT.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_list">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>148</y>
+       <width>271</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="text">
+      <string>Cabrera Gallardo Carlos Gabriel
+
+Montoya Herrera Marcelo José
+
+Rocha Montoya Carlos Adrian
+
+Corcuera Araujo Carlos Bitner
+
+Fernandez Reyes José María</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="grafic2_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>102</y>
+      <width>721</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#update_graf2_btn{
+	background-color:qlineargradient(spread:pad, x1:0.5, y1:0.596636, x2:0.5, y2:0.216, stop:0 rgba(0, 111, 111, 255), stop:1 rgba(0, 206, 206, 255));
+	color: rgb(203, 203, 203);
+}
+#label_cuadro2{
+	background-color: rgb(255, 255, 255);
+	border:4px outset rgb(102, 102, 102);
+}</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>401</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="grafica_dos"/>
+    </widget>
+    <widget class="QPushButton" name="update_graf2_btn">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>360</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Candara</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>ACTUALIZAR GRÁFICO</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>label_20</zorder>
+   <zorder>menu</zorder>
+   <zorder>home_btn</zorder>
+   <zorder>option_btn</zorder>
+   <zorder>line_36</zorder>
+   <zorder>line_37</zorder>
+   <zorder>line_38</zorder>
+   <zorder>settings1_widget</zorder>
+   <zorder>settings2_widget</zorder>
+   <zorder>msg_label</zorder>
+   <zorder>home_widget</zorder>
+   <zorder>grafic2_widget</zorder>
+   <zorder>grafic1_widget</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>close_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>18</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>772</x>
+     <y>293</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>graf_btn1</sender>
+   <signal>clicked()</signal>
+   <receiver>grafic1_widget</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1335</x>
+     <y>488</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settings_btn1</sender>
+   <signal>clicked()</signal>
+   <receiver>settings1_widget</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settings_btn2</sender>
+   <signal>clicked()</signal>
+   <receiver>settings2_widget</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>26</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>874</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>home_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>home_widget</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>920</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>graf_btn2</sender>
+   <signal>clicked()</signal>
+   <receiver>grafic2_widget</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>208</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
